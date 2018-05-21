@@ -6,7 +6,7 @@ Westtown Resort is a project started by a group of Computer Science students in 
 The latest version of Westtown Resort was made open-source on May 11, 2018 under the Apache License 2.0.
 
 ## Contribution Guidelines
-If you have improvements to Westtown Resort, send us your pull requests! Westtown Resort team members will be assigned to review your pull requests. Once the pull requests are approved and pass continuous integration checks, we will merge the pull requests. We use GitHub issues for tracking requests and bugs.
+If you have improvements to Westtown Resort, send us your pull requests! Westtown Resort team members will be assigned to review your pull requests. Once the pull requests are approved, we will merge the pull requests. We use GitHub issues for tracking requests and bugs.
 
 ## Original Contributors
 * Tom Barnett
@@ -19,4 +19,4 @@ If you have improvements to Westtown Resort, send us your pull requests! Westtow
 * Yanwen Xu
 
 ## License
-Apache License 2.0
+[Apache License 2.0](https://github.com/Dr-Kevin-Wang/westtownresort/blob/master/LICENSE)
