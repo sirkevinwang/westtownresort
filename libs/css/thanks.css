@@ -1,0 +1,86 @@
+@import url("../../fonts/fonts.css");
+
+body,html {
+	overflow: hidden;
+	font-family: "MyriadPro";
+	color: white;
+	font-size: 13pt;
+	font-weight: 300;
+	letter-spacing: 0.075em;
+	line-height: 1.65em;
+	background-color: #1F1F1F;
+	text-align: center;
+}
+
+.header {
+	position: relative;
+	border-bottom: solid 2px #fff;
+	padding-bottom: 1em;
+	display: inline-block;
+	padding-bottom: 1em;
+	margin: 21px;
+}
+
+.content {
+	margin-top: 200px;
+}
+
+.navbar-resort {
+	background: #1F1F1F;
+}
+
+.navbar-brand {
+	padding: 12px 11px;
+	color: white;
+	margin: 0;
+	font-size: 12pt;
+}
+
+h1,h2 {
+	letter-spacing: 0.225em;
+	margin: 0 0 1em 0;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.35em;
+	line-height: 1.75em;
+}
+
+p {
+	color: #ffffff;
+	top: 0;
+	margin: 0 0 2.5em 0;
+}
+
+.btn.active.focus, .btn.active:focus, .btn.active:hover,
+.btn:active.focus, .btn:active:focus, .btn:active:hover {
+	background-color: white;
+	color: black;
+	opacity: 0.8;
+}
+
+.btn.btn-google.active, .btn.btn-google:active, .btn.btn-google.active.focus, .btn.btn-google.active:focus, .btn.btn-google.focus, .btn.btn-google:active.focus,
+.btn.btn-google:active:focus, .btn.btn-google:focus{
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.btn-google {
+	font-family: "MyriadPro";
+	padding: 1em 1.1em;
+	background-color: white;
+	color: black;
+	font-size: 12pt;
+	border-radius: 4px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.sign-in-btn {
+	position: relative;
+	vertical-align: middle;
+	margin-right: 15px;
+}

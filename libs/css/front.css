@@ -1,0 +1,245 @@
+@import url("../../fonts/fonts.css");
+
+body,html {
+	overflow: hidden;
+	font-family: "MyriadPro";
+	color: white;
+	font-size: 13pt;
+	font-weight: 300;
+	letter-spacing: 0.075em;
+	line-height: 1.65em;
+}
+
+body #page-wrapper {
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/banner.jpg");
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/banner.jpg");
+	background-image: -ms-linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/banner.jpg");
+	background-image: linear-gradient(top, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../images/banner.jpg");
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 0;
+}
+
+body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+	-moz-animation: none !important;
+	-webkit-animation: none !important;
+	-ms-animation: none !important;
+	animation: none !important;
+	-moz-transition: none !important;
+	-webkit-transition: none !important;
+	-ms-transition: none !important;
+	transition: none !important;
+}
+
+body.is-loading #banner h2 {
+	-moz-transform: scale(0.95);
+	-webkit-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	transform: scale(0.95);
+	opacity: 0;
+}
+
+body.is-loading #banner h2:before, body.is-loading #banner h2:after {
+	width: 0;
+}
+
+body.is-loading #banner .more {
+	-moz-transform: translateY(8.5em);
+	-webkit-transform: translateY(8.5em);
+	-ms-transform: translateY(8.5em);
+	transform: translateY(8.5em);
+	opacity: 0;
+}
+
+body.is-loading #banner:after {
+	opacity: 1;
+}
+
+h2 {
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 0.225em;
+	margin: 0 0 1em 0;
+	text-transform: uppercase;
+	font-size: 1.35em;
+	line-height: 1.75em;
+}
+
+/* Banner */
+
+#banner {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-moz-justify-content: center;
+	-webkit-justify-content: center;
+	-ms-justify-content: center;
+	justify-content: center;
+	cursor: default;
+	height: 100vh;
+	min-height: 35em;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+}
+
+#banner h2 {
+	-moz-transform: scale(1);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+	-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+	-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+	transition: transform 0.5s ease, opacity 0.5s ease;
+	display: inline-block;
+	font-size: 1.75em;
+	opacity: 1;
+	padding: 0.35em 1em;
+	position: relative;
+	z-index: 1;
+	text-shadow: 0.5px 0.5px 2px #000000;
+}
+
+#banner h2:before, #banner h2:after {
+	-moz-transition: width 0.85s ease;
+	-webkit-transition: width 0.85s ease;
+	-ms-transition: width 0.85s ease;
+	transition: width 0.85s ease;
+	-moz-transition-delay: 0.25s;
+	-webkit-transition-delay: 0.25s;
+	-ms-transition-delay: 0.25s;
+	transition-delay: 0.25s;
+	background: #fff;
+	content: '';
+	display: block;
+	height: 2px;
+	position: absolute;
+	width: 100%;
+}
+
+#banner h2:before {
+	top: 0;
+	left: 0;
+}
+
+#banner h2:after {
+	bottom: 0;
+	right: 0;
+}
+
+#banner p {
+	letter-spacing: 0.225em;
+	text-transform: uppercase;
+	text-shadow: 0.5px 0.5px 2px #000000;
+}
+
+#banner p a {
+	color: inherit;
+}
+
+#banner .more {
+	-moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
+	-webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
+	-ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
+	transition: transform 0.75s ease, opacity 0.75s ease;
+	-moz-transition-delay: 3.5s;
+	-webkit-transition-delay: 3.5s;
+	-ms-transition-delay: 3.5s;
+	transition-delay: 3.5s;
+	-moz-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	border: none;
+	bottom: 0;
+	color: inherit;
+	font-size: 0.8em;
+	height: 8.5em;
+	left: 50%;
+	letter-spacing: 0.225em;
+	margin-left: -8.5em;
+	opacity: 1;
+	outline: 0;
+	padding-left: 0.225em;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	width: 16em;
+	z-index: 1;
+}
+
+#banner .more:after {
+	background-image: url("images/arrow.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	bottom: 4em;
+	content: '';
+	display: block;
+	height: 1.5em;
+	left: 50%;
+	margin: 0 0 0 -0.75em;
+	position: absolute;
+	width: 1.5em;
+}
+
+#banner:after {
+	-moz-pointer-events: none;
+	-webkit-pointer-events: none;
+	-ms-pointer-events: none;
+	pointer-events: none;
+	-moz-transition: opacity 3s ease-in-out;
+	-webkit-transition: opacity 3s ease-in-out;
+	-ms-transition: opacity 3s ease-in-out;
+	transition: opacity 3s ease-in-out;
+	-moz-transition-delay: 1.25s;
+	-webkit-transition-delay: 1.25s;
+	-ms-transition-delay: 1.25s;
+	transition-delay: 1.25s;
+	content: '';
+	background: #2e3842;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+button {
+	font-family: "MyriadPro";
+	font-weight: 200;
+}
+
+.btn-primary {
+	margin-top: 45px;
+	background-color: white;
+	color: black;
+	border: none;
+	padding: 13px 20px 13px 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12pt;
+}
+
+button.btn-primary:hover {
+	background-color: white;
+	color: black;
+	opacity: 0.9;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover,
+.btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover {
+	background-color: white;
+	color: black;
+	opacity: 0.8;
+}

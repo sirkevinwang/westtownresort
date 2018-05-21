@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'MyriadPro';
+  font-weight: 300;
+  src: url(MyriadPro-Light.otf);
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  font-weight: 400;
+  src: url(MyriadPro-Regular.otf);
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  font-weight: 500;
+  src: url(MyriadPro-Semibold.otf);
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  font-weight: 700;
+  src: url(MyriadPro-Bold.otf);
+}
+
+@font-face {
+  font-family: 'MyriadPro';
+  font-weight: 900;
+  src: url(MyriadPro-Black.otf);
+}

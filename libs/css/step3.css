@@ -1,0 +1,147 @@
+@import url("../../fonts/fonts.css");
+
+body,html {
+	overflow: hidden;
+	font-family: "MyriadPro";
+	color: white;
+	font-size: 13pt;
+	font-weight: 300;
+	letter-spacing: 0.075em;
+	line-height: 1.65em;
+	background-color: #64433b;
+	text-align: center;
+}
+
+.content {
+	margin-top: 150px;
+}
+
+.navbar-resort {
+	background: #2e3842;
+}
+
+.navbar-brand {
+	padding: 12px 11px;
+	color: white;
+	margin: 0;
+	font-size: 12pt;
+}
+
+.header {
+	position: relative;
+	border-bottom: solid 2px #fff;
+	padding-bottom: 1em;
+	display: inline-block;
+	padding-bottom: 1em;
+	margin: 21px;
+}
+
+h1,h2 {
+	letter-spacing: 0.225em;
+	margin: 0 0 1em 0;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.35em;
+	line-height: 1.75em;
+}
+
+p {
+	color: #c7ebe8;
+	top: 0;
+	margin: 0 0 2em 0;
+}
+
+.btn-google {
+	font-family: "MyriadPro";
+	padding: 0.7em 1.3em;
+	background-color: white;
+	color: black;
+	font-size: 18px;
+	border-radius: 4px;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.sign-in-btn {
+	position: relative;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+form {
+	color: black;
+}
+
+.dropzone,.dropzone * {
+	box-sizing: border-box;
+}
+
+.dropzone {
+	position: relative;
+
+}
+
+.dropzone .dz-preview {
+	position: relative;
+	display: inline-block;
+	width: 120px;
+	margin: 0.5em;
+}
+
+.dropzone .dz-preview .dz-progress {
+	display: block;
+	height: 15px;
+	border: 1px solid #aaa;
+}
+
+.dropzone .dz-preview .dz-progress .dz-upload {
+	display: block;
+	height: 100%;
+	width: 0;
+	background: green;
+}
+
+.dropzone .dz-preview .dz-error-message {
+	color: red;
+	display: none;
+}
+
+.dropzone .dz-preview.dz-error .dz-error-message,.dropzone .dz-preview.dz-error .dz-error-mark
+	{
+	display: block;
+}
+
+.dropzone .dz-preview.dz-success .dz-success-mark {
+	display: block;
+}
+
+.dropzone .dz-preview .dz-error-mark,.dropzone .dz-preview .dz-success-mark
+	{
+	position: absolute;
+	display: none;
+	left: 30px;
+	top: 30px;
+	width: 54px;
+	height: 58px;
+	left: 50%;
+	margin-left: -27px;
+}
+
+
+/* Custom decoration code */
+.decoration {
+	border: 4px dashed white;
+	font-family: "MyriadPro";
+	font-weight: 400;
+	font-size: 25px;
+	width: 700px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	background: transparent;
+	padding: 20px;
+}
